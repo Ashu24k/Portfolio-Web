@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+ rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+ integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav id="Home">
+            <div class="left">Ashish's Portfolio Web</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#main">Skills</a></li>
+                    <li><a href="#Contacts">Contacts</a></li>
+                    <li><a href="https://github.com/Ashu24k">Github</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSec">
+            <div class="leftSec">
+                Hello, I'm <div class="name">Ashish!</div>
+                <div class="div1">And I am a skilled</div>
+                <span id="element"></span>
+                <div class="btn"><button class="resume"><a href="./AshishKharat-resume.pdf" download>Download Resume</a></button></div>
+            </div>
+            <div class="rightSec">
+                <img src="./image2.png" alt="dev">
+            </div>
+        </section>
+
+        <div id="main">
+            <div class="circle"></div>
+            <header>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Skills:</h2>
+                    <p> Aspiring frontend developer proficient in HTML, CSS, and JavaScript,
+                        with hands-on experience in Bootstrap and React. Skilled in version
+                        control with Git and GitHub, ensuring efficient collaboration and code
+                        management. Familiarity with Canva and Figma for design basics, striving
+                        to create visually appealing and user-friendly web experiences.</p>
+                        <a href="https://github.com/Ashu24k">visit Projects</a>
+                </div>
+                <div class="imgBox">
+                    <img class="superheroes" src="./img/html.png" alt="html">
+                </div>
+            </div>
+            <div class="Blogos">
+                <li><img onclick="imgSlider('./img/html.png');changeColor('rgb(0, 0, 52)');" src="img/html.png" height="75px"></li>
+                <li><img onclick="imgSlider('./img/css.png');changeColor('rgb(0, 0, 52)');" src="img/css.png" height="75px"></li>
+                <li><img onclick="imgSlider('./img/js.png');changeColor('rgb(0, 0, 52)');" src="img/js.png" height="60px"></li>
+                <li><img onclick="imgSlider('./img/boots.png');changeColor('rgb(0, 0, 52)');" src="img/boots.png" height="60px"></li>
+                <li><img onclick="imgSlider('./img/react.png');changeColor('rgb(0, 0, 52)');" src="img/react.png" height="60px"></li>
+                <li><img onclick="imgSlider('./img/canva.png');changeColor('rgb(0, 0, 52)');" src="img/canva.png" height="60px"></li>
+                <li><img onclick="imgSlider('./img/figma.png');changeColor('rgb(0, 0, 52)');" src="img/figma.png" height="60px"></li>
+                <li><img onclick="imgSlider('./img/git.png');changeColor('rgb(0, 0, 52)');" src="img/git.png" height="60px"></li>
+            </div>
+        </div>
+
+        <section class="sectionSec" id="About">
+            <hr>
+            <h1>About Me</h1>
+            <div class="Secbox">
+            <div class="leftSec2">
+                <img src="./image1.png" alt="dev">
+            </div>
+            <div class="rightSec2">
+                <p>I'm a frontend developer who specializes in creating user-friendly websites
+                    and applications. I love turning ideas into visually appealing and easy-to-navigate
+                    digital experiences.</p>
+
+                <h1>Education</h1>
+                <ul> 
+                    <li>
+                        Bachelor's of Computer Applications (2022)
+                        <div>Extol institute of management</div>
+                    </li>
+                    <li>
+                        Higher Secondary School (2018)
+                        <div>New St. Mary Convent H.S. School</div>
+                    </li>
+                    <li>
+                        Secondary School (2016)
+                        <div>New St. Mary Convent H.S. School</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        
+    </main>
+
+    <footer id="Contacts">
+        <div class="footer">
+            <div class="footer-one">
+                <ul>
+                <li><a href="#Home">Home</a></li>
+                <br>
+                <li><a href="#About">About</a></li>
+                <br>
+                <li><a href="#main">Projects</a></li>
+                <br>
+                <li><a href="#main">Skills</a></li>
+                <br>
+                <li><a href="https://github.com/Ashu24k">Github</a></li>
+                </ul>
+            </div>
+            <div class="footer-two">
+                <div class="contactCon">
+                    <form action="" id="contact-left">
+                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Front-end Developer...'],
+          typeSpeed: 50,
+        });
+      </script>
+      <script src="index.js"></script>
+</body>
+</html>
